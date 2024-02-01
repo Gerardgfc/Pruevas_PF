@@ -13,71 +13,44 @@ def presentacion():
     str: Código HTML que muestra la página de presentación.
     '''
     return '''
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Betta API</title>
-        <style>
-            body {
-                font-family: 'Arial', sans-serif;
-                background-image: url('https://www.canva.com/design/DAF6rs8MY2s/D_7gB7CeBAAxfx7leOATkA/view?utm_content=DAF6rs8MY2s&utm_campaign=designshare&utm_medium=link&utm_source=editor');
-                background-attachment: fixed;
-                background-color: #f0f0f0;
-                color: #333;
-                margin: 0;
-                padding: 0;
-            }
+</head>
+<body style="font-family: 'Arial', sans-serif;
+            background-image: url('Betta_API.png');
+            background-attachment: fixed;
+            background-color: #f0f0f0;
+            background-size: cover; /* Ajusta la imagen al tamaño de la página */
+            color: #333;
+            margin: 0;
+            padding: 0;">
 
-            header {
-                background-color: #333;
-                color: white;
-                padding: 18.5px;
-                text-align: center;
-            }
+    <header style="background-color: #333;
+                   color: white;
+                   padding: 10px; /* Reducir el padding */
+                   text-align: center;">
+        <h1 style="margin: 0;">Betta Proyecto Final Henrry</h1> <!-- Eliminar el margen del h1 -->
+    </header>
+    
+    <main style="max-width: 800px;
+                 margin: 20px auto;
+                 padding: 150px;
+                 background-color: rgba(255, 255, 255, 0.8);
+                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <h2>Proyecto final de la carrera de Data Science en Soy Henrry.</h2>
+        <h3> CONSULTORA DATA</h3>
 
-            main {
-                max-width: 800px;
-                margin: 20px auto;
-                padding: 20px;
-                background-color: rgba(255, 255, 255, 0.8);
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            }
+        <p>El desarrollo completo está disponible en <a href="https://github.com/ConsultoraAnalisisDeMercado/PF_CONSULTORA_DATA" target="_blank">GitHub</a>.</p>
+    </main>
+    
+    <footer style="text-align: center;
+                   margin-top: 10px; /* Reducir el margen superior */
+                   padding: 5px; /* Reducir el padding */
+                   background-color: #333;
+                   color: white;">
+        <p>&copy; 2023</p>
+    </footer>
 
-            a {
-                color: #007bff;
-                text-decoration: none;
-            }
-
-            a:hover {
-                text-decoration: underline;
-            }
-
-            footer {
-                text-align: center;
-                margin-top: 20px;
-                padding: 10px;
-                background-color: #333;
-                color: white;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <h1>Betta Proyecto Final Henrry</h1>
-        </header>
-        
-        <main>
-
-        </main>
-        <br>
-        <br>
-        <br>
-        <br>
-        <footer>
-            <p>&copy; 2023</p>
-        </footer>
-    </body>
-    </html>
+</body>
+</html>
     '''
     
 def top_hoteles_por_ubicacion(estado:str, ciudad:str):
