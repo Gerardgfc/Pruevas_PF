@@ -60,6 +60,12 @@ def top_hoteles_por_ubicacion(estado:str, ciudad:str):
     estado = estado.upper()
     ciudad = ciudad.title()
     
+    hoteles['state'] = hoteles['state'].str.title()
+    hoteles['city'] = hoteles['city'].str.title()
+    
+    categorias['state'] = categorias['state'].str.title()
+    categorias['city'] = categorias['city'].str.title()
+    
     hoteles_ubicacion = hoteles[(hoteles['state'] == estado) & (hoteles['city'] == ciudad)]
     if hoteles_ubicacion.empty:
         return {"No se encontraron hoteles en la ubicación proporcionada."}
@@ -94,6 +100,12 @@ def ordenar_por_cercania(local:str):
     global hoteles, categorias
     local = local.title()
     
+    hoteles['state'] = hoteles['state'].str.title()
+    hoteles['city'] = hoteles['city'].str.title()
+    
+    categorias['state'] = categorias['state'].str.title()
+    categorias['city'] = categorias['city'].str.title()
+    
     # Obtiene las coordenadas del local indicado
     latitud_local, longitud_local, ciudad_local, estado_local = hoteles[hoteles['name'] == local][['latitude', 'longitude','city','state']].values[0]
 
@@ -113,6 +125,13 @@ def ordenar_por_cercania(local:str):
 def ordenar_por_bussines_stars(local):
     global hoteles, categorias
     local = local.title()
+    
+    hoteles['state'] = hoteles['state'].str.title()
+    hoteles['city'] = hoteles['city'].str.title()
+    
+    categorias['state'] = categorias['state'].str.title()
+    categorias['city'] = categorias['city'].str.title()
+    
     # Obtenemos las coordenadas del local indicado
     
     latitud_local, longitud_local, ciudad_local, estado_local = hoteles[hoteles['name'] == local][['latitude', 'longitude','city','state']].values[0]
