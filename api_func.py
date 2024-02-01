@@ -16,11 +16,11 @@ def presentacion():
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Explora la API de Steam</title>
+        <title>Betta API</title>
         <style>
             body {
                 font-family: 'Arial', sans-serif;
-                background-image: url('https://i.blogs.es/400138/steam-boicot-reddit/1366_2000.png');
+                background-image: url('https://www.canva.com/design/DAF6rs8MY2s/D_7gB7CeBAAxfx7leOATkA/view?utm_content=DAF6rs8MY2s&utm_campaign=designshare&utm_medium=link&utm_source=editor');
                 background-attachment: fixed;
                 background-color: #f0f0f0;
                 color: #333;
@@ -63,28 +63,18 @@ def presentacion():
     </head>
     <body>
         <header>
-            <h1>Explora la API de Steam</h1>
+            <h1>Betta Proyecto Final Henrry</h1>
         </header>
         
         <main>
-            <h2>¡Explora la API de Steam para obtener información sobre videojuegos! Realiza diversas consultas directamente desde la plataforma.</h2>
-            
-            <h3><strong>Cómo empezar:</strong></h3>
-            <ul>
-                <li>Agrega <span style="background-color: lightgray;">/docs</span> al final de la URL actual para explorar e interactuar con la API.</li>
-                <li>O simplemente hacé <a href="https://proyecto-integrador-1.onrender.com/docs" target="_blank">click acá</a> para acceder a la documentación.</li>
-            </ul>
 
-            <p>Si deseas conocer más sobre el proyecto, puedes visitar mi perfil en <a href="https://www.linkedin.com/in/gerard-carrizo-508b16133/" target="_blank">LinkedIn</a>.</p>
-
-            <p>El desarrollo completo está disponible en <a href="https://github.com/Gerardgfc/Gerardgfc-Proyecto_Integrador_1" target="_blank">GitHub</a>.</p>
         </main>
         <br>
         <br>
         <br>
         <br>
         <footer>
-            <p>&copy; 2023 Gerardo Carrizo</p>
+            <p>&copy; 2023</p>
         </footer>
     </body>
     </html>
