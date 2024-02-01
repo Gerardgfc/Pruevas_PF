@@ -55,8 +55,10 @@ def presentacion():
     
 def top_hoteles_por_ubicacion(estado:str, ciudad:str):
 
+    global hoteles,categorias
+
     estado = estado.upper()
-    ciudad = ciudad.capitalize()
+    ciudad = ciudad.title()
     
     hoteles_ubicacion = hoteles[(hoteles['state'] == estado) & (hoteles['city'] == ciudad)]
     if hoteles_ubicacion.empty:
@@ -90,7 +92,8 @@ def distancia_haversine(lat1, lon1, lat2, lon2):
 def ordenar_por_cercania(local:str):
     #global hoteles, categorias
     global hoteles, categorias
-
+    local = local.title()
+    
     # Obtiene las coordenadas del local indicado
     latitud_local, longitud_local, ciudad_local, estado_local = hoteles[hoteles['name'] == local][['latitude', 'longitude','city','state']].values[0]
 
@@ -109,6 +112,7 @@ def ordenar_por_cercania(local:str):
 # Función para ordenar el DataFrame categorias por 'bussines_stars' de mayor a menor, conservando la distancia
 def ordenar_por_bussines_stars(local):
     global hoteles, categorias
+    local = local.title()
     # Obtenemos las coordenadas del local indicado
     
     latitud_local, longitud_local, ciudad_local, estado_local = hoteles[hoteles['name'] == local][['latitude', 'longitude','city','state']].values[0]
