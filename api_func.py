@@ -15,7 +15,7 @@ def presentacion():
     return '''
 </head>
 <body style="font-family: 'Arial', sans-serif;
-            background-image: url('Betta_API.png');
+            background-image: url('https://drive.google.com/file/d/1TRfdXerM_Bsebe1qmWwsQ1m3B5ODwBgD/view?usp=drive_link');
             background-attachment: fixed;
             background-color: #f0f0f0;
             background-size: cover; /* Ajusta la imagen al tamaño de la página */

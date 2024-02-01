@@ -26,8 +26,8 @@ def home():
          description= """ <front color='blue'>
                         INSTRUCCIONES<br>
                         1. Haga click en "Try it out".<br>
-                        2. Ingrese el género en el box abajo.<br>
-                        3. Scrollear a "Responses" para ver el año con más horas jugadas para un género específico teniendo en cuenta los géneros disponibles.
+                        2. Ingrese el estado y ciudad en el box abajo.<br>
+                        3. Scrollear a "Responses" para ver el top de hoteles para esa ubicación.
                         </font>
                     """,
          tags=["Consultas Frecuentes"])
@@ -37,12 +37,12 @@ def top_hoteles_por_ubicacion(estado: str = Query(None, description="Ingresar es
     return fa.top_hoteles_por_ubicacion(estado, ciudad)
 
 
-@app.get(path="/locales_cercanos_uvi",
+@app.get(path="/locales_cercanos_ubi",
          description= """ <front color='blue'>
                         INSTRUCCIONES<br>
                         1. Haga click en "Try it out".<br>
-                        2. Ingrese el género en el box abajo.<br>
-                        3. Scrollear a "Responses" para ver el año con más horas jugadas para un género específico teniendo en cuenta los géneros disponibles.
+                        2. Ingrese el local en el box abajo.<br>
+                        3. Scrollear a "Responses" para ver locales cercanos según ubicación.
                         </font>
                     """,
          tags=["Consultas Frecuentes"])
@@ -55,8 +55,8 @@ def ordenar_por_cercania(local: str = Query(None, description="Ingresar un hotel
          description= """ <front color='blue'>
                         INSTRUCCIONES<br>
                         1. Haga click en "Try it out".<br>
-                        2. Ingrese el género en el box abajo.<br>
-                        3. Scrollear a "Responses" para ver el año con más horas jugadas para un género específico teniendo en cuenta los géneros disponibles.
+                        2. Ingrese el local en el box abajo.<br>
+                        3. Scrollear a "Responses" para ver locales cercanos según reviews.
                         </font>
                     """,
          tags=["Consultas Frecuentes"])
