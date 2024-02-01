@@ -15,7 +15,7 @@ def presentacion():
     return '''
 </head>
 <body style="font-family: 'Arial', sans-serif;
-            background-image: url('https://drive.google.com/file/d/1TRfdXerM_Bsebe1qmWwsQ1m3B5ODwBgD/view?usp=drive_link');
+            background-image: url('https://lh3.googleusercontent.com/u/3/drive-viewer/AEYmBYTYSVEF0eTPePPoQOhnz3Ge3aoQJyVXbrUHib6iJhl7pUKypa5qsqUZUcFWUpG53uAbM94WPjvDd8hqGuIaFq-5Eknygg=w1325-h615');
             background-attachment: fixed;
             background-color: #f0f0f0;
             background-size: cover; /* Ajusta la imagen al tamaño de la página */
@@ -37,7 +37,7 @@ def presentacion():
                  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
         <h2>Proyecto final de la carrera de Data Science en Soy Henrry.</h2>
         <h3> CONSULTORA DATA</h3>
-
+        <p>Click <a href="https://pruebas-ihwt.onrender.com/docs" target="_blank">acá</a>.</p>
         <p>El desarrollo completo está disponible en <a href="https://github.com/ConsultoraAnalisisDeMercado/PF_CONSULTORA_DATA" target="_blank">GitHub</a>.</p>
     </main>
     
