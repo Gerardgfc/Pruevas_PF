@@ -60,7 +60,6 @@ def top_hoteles_por_ubicacion(estado:str, ciudad:str):
     estado = estado.upper()
     ciudad = ciudad.title()
     
-    hoteles['state'] = hoteles['state'].str.title()
     hoteles['city'] = hoteles['city'].str.title()
     
     categorias['state'] = categorias['state'].str.title()
@@ -100,7 +99,6 @@ def ordenar_por_cercania(local:str):
     global hoteles, categorias
     local = local.title()
     
-    hoteles['state'] = hoteles['state'].str.title()
     hoteles['city'] = hoteles['city'].str.title()
     
     categorias['state'] = categorias['state'].str.title()
@@ -126,7 +124,6 @@ def ordenar_por_bussines_stars(local):
     global hoteles, categorias
     local = local.title()
     
-    hoteles['state'] = hoteles['state'].str.title()
     hoteles['city'] = hoteles['city'].str.title()
     
     categorias['state'] = categorias['state'].str.title()
