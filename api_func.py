@@ -2,8 +2,8 @@ import pandas as pd
 import numpy as np
 from math import radians, sin, cos, sqrt, atan2
 
-hoteles = pd.read_csv('Data/hoteles_unicos.csv')
-categorias = pd.read_csv('Data/categorias_unicas.csv')
+hoteles = pd.read_csv('hoteles_unicos.csv')
+categorias = pd.read_csv('categorias_unicas.csv')
 
 def presentacion():
     '''
