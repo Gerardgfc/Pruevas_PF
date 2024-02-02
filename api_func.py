@@ -101,7 +101,6 @@ def ordenar_por_cercania(local:str):
     
     hoteles['city'] = hoteles['city'].str.title()
     
-    categorias['state'] = categorias['state'].str.title()
     categorias['city'] = categorias['city'].str.title()
     
     # Obtiene las coordenadas del local indicado
@@ -126,7 +125,6 @@ def ordenar_por_bussines_stars(local):
     
     hoteles['city'] = hoteles['city'].str.title()
     
-    categorias['state'] = categorias['state'].str.title()
     categorias['city'] = categorias['city'].str.title()
     
     # Obtenemos las coordenadas del local indicado
