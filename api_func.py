@@ -70,7 +70,7 @@ def top_hoteles_por_ubicacion(estado:str, ciudad:str):
     else:
         top_hoteles = hoteles_ubicacion.nlargest(5, 'bussines_stars')
         top_hoteles = top_hoteles[['name', 'bussines_stars']]
-        return {f'El top de hoteles para tu ubicación es':top_hoteles.to_dict(orient='records')}
+        return {top_hoteles.to_dict(orient='records')}
 
 
 
